@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio-forms</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="info">
+          <h1>
+            FICOU COM DÚVIDA? <br />
+            NOS MANDE UMA MENSAGEM!
+          </h1>
+          <p>
+            caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem
+            e entraremos em contato em menos de 24h.
+          </p>
+        </div>
+
+        <div class="formulario">
+          <form>
+            <input type="text" id="nome" placeholder=" Nome completo *"/>
+            <span class="erro erro-nome" aria-hidden="true">campo obrigatório</span>
+            <input type="text" id="email" placeholder=" Email *"/>
+            <span class="erro erro-email">campo obrigatório</span>
+            <input type="text" id="telefone" placeholder=" Telefone *"/>
+            <span class="erro erro-telefone">campo obrigatório</span>
+            <textarea name="mensagem" id="mensagem" placeholder="  Mensagem*" ></textarea> 
+            <span class="erro erro-mensagem">campo obrigatório</span>
+
+            <p>*campos obrigatórios</p>
+            <input type="submit" id="enviar" class="botao" />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

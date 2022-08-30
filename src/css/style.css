@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.container {
+  background: url(../imagens/bg-repeat.jpg);
+  background-size: contain;
+  height: 400px;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.info h1 {
+  font-size: 20px;
+
+}
+
+.info p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.info {
+  width: 300px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  color: #fff;
+}
+
+.formulario {
+  padding: 20px;
+  width: 340px;
+  height: 378px;
+  background-color: #fff;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  /* gap: 15px; */
+  
+}
+
+.formulario input {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 35px;
+  width: 298px;
+  margin-top: 7px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 2px;
+}
+
+.formulario textarea {
+  height: 100px;
+  width: 298px;
+  margin-top: 7px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  padding: 2px;
+  resize: none;
+}
+
+.formulario .botao {
+  height: 41px;
+  background-color: rgba(60, 204, 135, 1);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.erro {
+  font-size: 8px;
+  /* display: none; */
+  opacity: 0;
+  color:#f52e2e;
+}
+
+.erro.visivel {
+  display: block;
+  opacity: 1;
+}
+
